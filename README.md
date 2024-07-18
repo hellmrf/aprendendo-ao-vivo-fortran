@@ -48,6 +48,21 @@ Para Windows, nós recomendamos fortemente a instalação do [Windows Subsystem 
 
 Caso não queria usar WSL2, pode usar [MinGW](https://www.mingw-w64.org/downloads/#mingw-builds).
 
+1. Instalar MinGW: Baixe [daqui](https://github.com/niXman/mingw-builds-binaries/releases), descompacte onde preferir.
+2. Compilar um código Fortran com MinGW:
+    1. Abra o terminal MinGW e navegue até o diretório do projeto.
+    2. Use o comando `gfortran` similar ao exemplo de Linux para compilar e executar o código.
+
+O executável do compilador ficará em `mingw64\bin\gfortran.exe`.
+
+**Nota**: ao compilar para Windows, use o nome do executável com `.exe`, por exemplo:
+```bash
+$ gfortran 00-hello.f90 -o hello.exe # Compila
+
+$ ./hello.exe # Executa
+```
+
+
 ## Autor
 
 Este projeto é desenvolvido por [Heliton Martins](https://github.com/hellmrf), fundador e produtor de [Programação Popular](https://youtube.com/@programacaopopular).
